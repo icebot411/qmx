@@ -1,4 +1,4 @@
-
+//ste
 var server_data = $response.body;
 var obj = JSON.parse(server_data);
 var serverinfo = {
