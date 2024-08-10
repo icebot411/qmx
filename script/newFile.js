@@ -1,25 +1,24 @@
-export var obj = JSON.parse($response.body);
+const { obj } = require("./bibe-toddler");
+
 obj =
-    {
-        "logins": [{
-            "provider": "Google",
-            "url": "https://bebi.family/en/account/login/Google?appId=a6bea4da-7cc0-4df3-9b5b-b3802b53e821&store=20&dev=1023771f-814b-41fd-aec8-3c09a771ceac"
-        }, {
-            "provider": "Apple",
-            "url": "https://bebi.family/en/account/login/Apple?appId=a6bea4da-7cc0-4df3-9b5b-b3802b53e821&store=20&dev=1023771f-814b-41fd-aec8-3c09a771ceac"
-        }],
-        "registration": "https://bebi.family/en/account/create/web?appId=a6bea4da-7cc0-4df3-9b5b-b3802b53e821&store=20&dev=1023771f-814b-41fd-aec8-3c09a771ceac",
-        "reset": "https://bebi.family/en/account/reset/web?appId=a6bea4da-7cc0-4df3-9b5b-b3802b53e821&store=20&dev=1023771f-814b-41fd-aec8-3c09a771ceac",
-        "receipt": "https://bebi.family/api/v1/app/bebi-toddlers/receipt",
-        "deviceId": "1023771f-814b-41fd-aec8-3c09a771ceac",
-        "update": false,
-        "time": "2024-08-10T20:27:23.7392728Z",
-        "country": "US",
-        "config": "https://cdn.fndr.ge/static/bebi-toddlers/config.json",
-        "isFreeTrialUsed": false,
-        "error": false,
-        "IsFreeTrialUsed ": false
-        "variables": [{
+{
+	"logins": [{
+		"provider": "Google",
+		"url": "https://bebi.family/en/account/login/Google?appId=a6bea4da-7cc0-4df3-9b5b-b3802b53e821&store=20&dev=1023771f-814b-41fd-aec8-3c09a771ceac"
+	}, {
+		"provider": "Apple",
+		"url": "https://bebi.family/en/account/login/Apple?appId=a6bea4da-7cc0-4df3-9b5b-b3802b53e821&store=20&dev=1023771f-814b-41fd-aec8-3c09a771ceac"
+	}],
+	"registration": "https://bebi.family/en/account/create/web?appId=a6bea4da-7cc0-4df3-9b5b-b3802b53e821&store=20&dev=1023771f-814b-41fd-aec8-3c09a771ceac",
+	"reset": "https://bebi.family/en/account/reset/web?appId=a6bea4da-7cc0-4df3-9b5b-b3802b53e821&store=20&dev=1023771f-814b-41fd-aec8-3c09a771ceac",
+	"receipt": "https://bebi.family/api/v1/app/bebi-toddlers/receipt",
+	"deviceId": "1023771f-814b-41fd-aec8-3c09a771ceac",
+	"update": false,
+	"time": "2024-08-10T19:25:11.7184954Z",
+	"country": "US",
+	"config": "https://raw.githubusercontent.com/icebot411/qmx/main/config-toddler.json",
+	"error": false,
+	"variables": [{
 		"id": "08876dff-2290-49fe-93f4-cc2412e787dc",
 		"key": "locked_pop",
 		"value": "{\"TestVariant\":0}",
@@ -65,8 +64,6 @@ obj =
 		"value": "{\"month\":\"mg1.kids.learning.games.mnth\",\"year\":\"mg1.kids.learning.games.yrl\"}",
 		"isActive": true
 	}],
-    };
-
-$done({body: JSON.stringify(obj)});
-
-// Descriptions
+	"error": false,
+	"IsFreeTrialUsed ": true
+};
