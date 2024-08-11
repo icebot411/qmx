@@ -9,7 +9,7 @@
 > Special reminder: Please indicate the source if you need to reprint, thank you for your cooperation!
 ***********************************************/	
 
-const version = 'V1.0.2';
+const version = 'V1.0.3';
 
 
 function setHeaderValue(e,a,d){var r=a.toLowerCase();r in e?e[r]=d:e[a]=d}var modifiedHeaders=$request.headers;setHeaderValue(modifiedHeaders," X-RevenueCat-ETag",""),$done({headers:modifiedHeaders});
