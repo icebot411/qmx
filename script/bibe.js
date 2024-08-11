@@ -67,8 +67,7 @@ obj=
 		"value": "{\"month\":\"mg1.kids.learning.games.mnth\",\"year\":\"mg1.kids.learning.games.yrl\"}",
 		"isActive": true
 	}],
-	"error": false,
-	"IsFreeTrialUsed ": true
+
 };
 
 $done({body: JSON.stringify(obj)});
