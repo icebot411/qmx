@@ -1,17 +1,18 @@
 var obj = JSON.parse($response.body);
 
 obj=
-{
-	"StoreList": [],
-	"StoreType": null,
-	"ProductId": null,
-	"PurchaseDate": "2019-10-27T16:27:38.000Z",
-	"ExpireDate": "2099-10-27T16:27:38.000Z",
-	"IsCancelled": false,
-	"IsFreeTrial": true,
-	"IsAutoRenewing": false,
-	"NeverBeenSubscribed": false
-}
+    {
+        "StoreList": ["APPLE"],
+        "StoreType": "APPLE",
+        "ProductId": "subscription",
+        "PurchaseDate": "2024-08-12T20:24:26.000Z",
+        "ExpireDate": "2099-08-19T20:24:26.000Z",
+        "IsCancelled": false,
+        "IsFreeTrial": true,
+        "IsAutoRenewing": false,
+        "NeverBeenSubscribed": false
+    }
+
 
 
 
