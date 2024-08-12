@@ -6,9 +6,9 @@ obj=
         "StoreType": "APPLE",
         "ProductId": "subscription",
         "PurchaseDate": "2024-08-12T20:24:26.000Z",
-        "ExpireDate": "2099-08-19T20:24:26.000Z",
+        "ExpireDate": "2062-08-29T17:44:26.000Z",
         "IsCancelled": false,
-        "IsFreeTrial": true,
+        "IsFreeTrial": false,
         "IsAutoRenewing": false,
         "NeverBeenSubscribed": false
     }
@@ -19,4 +19,3 @@ obj=
 $done({
     body: JSON.stringify(obj)
   });
-  
