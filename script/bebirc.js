@@ -8,12 +8,9 @@ obj={
 		"storeId": 20,
 		"partnerId": "260001887014616",
 		"startTime": "2024-08-10T18:28:08",
-		"expiryTime": "2024-08-17T18:28:08"
+		"expiryTime": "2099-08-17T18:28:08"
 	}]
 }
-
-
-
 
     $done({
         body: JSON.stringify(obj)
