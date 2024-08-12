@@ -8,7 +8,7 @@ obj=
 	"PurchaseDate": "2019-10-27T16:27:38.000Z",
 	"ExpireDate": "2099-10-27T16:27:38.000Z",
 	"IsCancelled": false,
-	"IsFreeTrial": false,
+	"IsFreeTrial": true,
 	"IsAutoRenewing": false,
 	"NeverBeenSubscribed": false
 }
