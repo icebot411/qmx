@@ -10,8 +10,8 @@ obj={
 		"created_at": "2024-08-13T20:49:29.604Z",
 		"subscriptions": [{
 			"id": 6082326,
-			"status": "trial",
-			"state": "active_trial",
+			"status": "0",
+			"state": "active",
 			"in_grace_period": false,
 			"product": "unlimited",
 			"platform": "apple",
@@ -20,7 +20,7 @@ obj={
 			"plan_id": "lk.ios.s1m.t7d.p16.v2",
 			"duration_unit": "months",
 			"duration_value": 1,
-			"auto_renew_status": true
+			"auto_renew_status": false
 		}],
 		"display_nps": false,
 		"children": [{
