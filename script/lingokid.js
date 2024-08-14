@@ -136,13 +136,8 @@ obj={
   
 }
 if ($request.url.indexOf(path3) != -1){
-    obj=
-    {
-        "status" : "ok",
-        "info" : {
-          "country" : "us",
-          "id" : 73049402,
-          "created_at" : "2024-08-13T20:49:29.604Z",
+    obj={
+
           "subscriptions" : [
             {
               "id" : 6082326,
@@ -154,9 +149,9 @@ if ($request.url.indexOf(path3) != -1){
               "duration_unit" : "months",
               "platform" : "apple",
               "in_grace_period" : false,
-              "ends_at" : 1724186985,
+              "ends_at" : 2724186985,
               "status" : "trial",
-              "starts_at" : 2724186985
+              "starts_at" : 1724186985
             }
           ],
           "children" : [
@@ -195,6 +190,6 @@ if ($request.url.indexOf(path3) != -1){
           "token" : "50d009de-bc26-4233-89a8-d6413b96932e"
         }
       }
-    }
+    
 
 $done({body: JSON.stringify(obj)});
