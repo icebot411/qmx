@@ -25,7 +25,7 @@ const list = {
 	'HTTPBot': { name: 'rc_lifetime', id: 'com.behindtechlines.HTTPBot.prounlock' },
 	'VSCO': { name: 'membership', id: 'com.circles.fin.premium.yearly' },
 	'1Blocker': { name: 'premium', id: 'blocker.ios.subscription.yearly' },
-  'Gear': { name: 'pro', id: 'com.gear.app.yearly'}
+    'Gear': { name: 'pro', id: 'com.gear.app.yearly'}
 };
 const data = {
 	"expires_date": "2030-02-18T07:52:54Z",
