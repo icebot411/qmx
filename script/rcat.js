@@ -43,8 +43,10 @@ if (typeof $response == "undefined") {
 	for (const i in list) {
 		if (new RegExp(`^${i}`, `i`).test(ua)) {
 			obj.subscriber.subscriptions[list[i].id] = data;
-			obj.subscriber.entitlements[list[i].name] = JSON.parse(JSON.stringify(data));
-			obj.subscriber.entitlements[list[i].name].product_identifier = list[i].id;
+            obj.subscriber.entitlements[list[i].name] = JSON.parse(JSON.stringify(data));
+            obj.subscriber.entitlements[list[i].name].product_identifier = list[i].id;
+			obj.subscriber.entitlement[list[i].name] = JSON.parse(JSON.stringify(data));
+            obj.subscriber.entitlement[list[i].name].product_identifier = list[i].id;
 			break;
 		}
 	}
