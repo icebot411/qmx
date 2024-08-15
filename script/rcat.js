@@ -32,6 +32,16 @@ const data = {
 	"original_purchase_date": "2020-02-11T07:52:55Z",
 	"purchase_date": "2020-02-11T07:52:54Z"
 };
+const data2 = {
+    "billing_issues_detected_at":null,
+    "expires_date":"2029-05-26T05:05:04Z",
+    "is_sandbox":false,
+    "original_purchase_date":"2022-04-09T05:05:04Z",
+    "period_type":"normal",
+    "purchase_date":"2022-04-09T05:05:04Z",
+    "store":"app_store",
+    "unsubscribe_detected_at":null
+      };
 
 if (typeof $response == "undefined") {
 	delete $request.headers["x-revenuecat-etag"]; // prevent 304 issues
@@ -42,11 +52,9 @@ if (typeof $response == "undefined") {
 	obj.subscriber.entitlement = obj.subscriber.entitlement || {};
 	for (const i in list) {
 		if (new RegExp(`^${i}`, `i`).test(ua)) {
-			obj.subscriber.subscriptions[list[i].id] = data;
+			obj.subscriber.subscriptions[list[i].id] = data2;
             obj.subscriber.entitlements[list[i].name] = JSON.parse(JSON.stringify(data));
             obj.subscriber.entitlements[list[i].name].product_identifier = list[i].id;
-			obj.subscriber.entitlement[list[i].name] = JSON.parse(JSON.stringify(data));
-            obj.subscriber.entitlement[list[i].name].product_identifier = list[i].id;
 			break;
 		}
 	}
