@@ -57,7 +57,7 @@ if (typeof $response == "undefined") {
 	for (const i in list) {
 		if (new RegExp(`^${i}`, `i`).test(ua)) {
 			obj.subscriber.subscriptions[list[i].id] = data2;
-            obj.subscriber.[list[i].id] = data3;
+            obj.subscriber[list[i]] = data3;
             obj.subscriber.entitlements[list[i].name] = JSON.parse(JSON.stringify(data));
             obj.subscriber.entitlements[list[i].name].product_identifier = list[i].id;
 			break;
