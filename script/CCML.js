@@ -1,3 +1,22 @@
+const Q = {};
+const Q1 = JSON.parse(typeof $response != "undefined" && $response.body || null);
+if (typeof $response == "undefined") {
+  delete $request.headers["x-revenuecat-etag"];
+  delete $request.headers["X-RevenueCat-ETag"];
+  Q.headers = $request.headers;
+} else if (Q1 && Q1.subscriber) {
+  Q1.subscriber.subscriptions = Q1.subscriber.subscriptions || {};
+  Q1.subscriber.entitlements = Q1.subscriber.entitlements || {};
+  var headers = {};
+  for (var key in $request.headers) {
+  const reg = /^[a-z]+$/;
+  if (key === "User-Agent" && !reg.test(key)) {
+    var lowerkey = key.toLowerCase();
+    $request.headers[lowerkey] = $request.headers[key];
+    delete $request.headers[key];
+    }
+  }
+  var UA = $request.headers['user-agent'];
 var obj = JSON.parse($response.body);
 
 obj={
