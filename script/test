@@ -1,0 +1,55 @@
+#########################################
+# @ScriptName        Quantumult X Free
+# @Author            iAppleC
+# @Website           https://iapplec.com
+# @FbChannel         https://www.facebook.com/groups/iapplec/
+# @UpdateTime        2023-05-19
+#########################################
+
+[general]
+udp_whitelist=53, 1024-65535
+profile_img_url=https://iapplec.com/premium/img/Free.png
+resource_parser_url= https://fastly.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
+
+[dns]
+server=1.1.1.1
+server=8.8.8.8
+server=45.90.28.0
+
+[policy]
+static=Fake iAP Policy, direct, proxy, reject, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cydia.png
+static=Block FB Tracking, OFF, ON, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Facebook.png
+static=Block Ads, ON, OFF, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png
+static=Block OTA, OFF, ON, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Update.png
+static=ON, reject, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png
+static=OFF, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Reject.png
+
+[server_remote]
+
+[filter_remote]
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Speedtest/Speedtest.list, tag=✈Speedtest, force-policy=direct, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-exceptions-rule.conf, tag=🇻🇳hostsVN, force-policy=direct, enabled=true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-rule.conf, tag=🇻🇳hostsVN, force-policy=Block Ads, enabled=true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-OTA.conf, tag=🇻🇳hostsVN-OTA, force-policy=Block OTA, enabled=true
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-FB.conf, tag=🇻🇳hostsVN-FB, force-policy=Block FB Tracking, enabled=true
+
+[rewrite_remote]
+https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumultX-rewrite.conf, tag=🇻🇳hostsVN, update-interval=172800, opt-parser=true, enabled=true
+https://iapplec.com/premium/Plugins/iAppleC-Y/, tag=🇻🇳iAppleC - Youtube💎, update-interval=172800, opt-parser=true, enabled=false
+https://iapplec.com/premium/Plugins/iAppleC-F/, tag=🇻🇳iAppleC - Free🆓, update-interval=172800, opt-parser=true, enabled=true
+
+[server_local]
+shadowsocks=example.com:80, method=chacha20, password=707961389305692171, obfs=http, obfs-host=bing.com, obfs-uri=/resource/file, fast-open=false, udp-relay=false, server_check_url=http://www.apple.com/generate_204, tag=📌Update 25/04/2024
+shadowsocks=example.com:80, method=chacha20, password=pwd, obfs=http, obfs-host=bing.com, obfs-uri=/resource/file, fast-open=false, udp-relay=false, server_check_url=http://www.apple.com/generate_204, tag=🇻🇳iAppleC Free - 🌐https://iapplec.com/
+shadowsocks=example.com:80, method=chacha20, password=pwd, obfs=http, obfs-host=bing.com, obfs-uri=/resource/file, fast-open=false, udp-relay=false, server_check_url=http://www.apple.com/generate_204, tag=🧧THANK YOU FOR USING OUR SERVICE
+[filter_local]
+final, direct
+host, activation.crossutility.com, reject
+host, quantumult.app, reject
+
+[rewrite_local]
+
+[mitm]
+passphrase = D610FA25
+p12 = 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
+hostname = buy.itunes.apple.com
