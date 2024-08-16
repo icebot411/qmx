@@ -108,7 +108,7 @@ if (typeof $response == "undefined") {
     'CountDuck':{ name: 'premium', id: 'Lifetime'},
     'HTTPBot':{ name: 'Pro', id: 'httpbot_1499_1y_1w0'},
     'MyPianist':{ name: 'pro', id: 'com.collaparte.mypianist.pro.gift.twelve'},
-    'TouchRetouchBasic':{ name: 'premium', id: 'tr5_yearlysubsc_30_and_20_dlrs'},//年底订阅
+    'TouchRetouchBasic':{ name: 'premium', id: 'tr5_yearlysubsc_30_and_20_dlrs'},//年底00订阅
     'Free':{ name: 'pro', id: 'appspree_pro_lifetime'},
     'Version':{ name: 'pro', id: 'httpbot_1499_1y_1w0'},
     'wordswag':{ name: 'pro', id: 'Pro_Launch_Monthly'},
