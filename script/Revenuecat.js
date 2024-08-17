@@ -63,6 +63,7 @@ if (typeof $response == "undefined") {
   var UA = $request.headers['user-agent'];
   const app = '1';
   const UAMappings = {
+    'CoComelon':{ name: 'rc_monthly', id: 'ccml_ios_monthly_v1'},//8.15
     'iScape':{ name: 'Pro', id: 'Limited_YearlyProAutoRenew'},//8.15
     'FunPix':{ name: 'premium', id: 'intro_price_weekly'},//8.15
     'WiseMate':{ name: 'vip_entitlement', id: 'wisemate.ai.ios.week'},//8.15
