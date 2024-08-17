@@ -1,6 +1,6 @@
 /*************************************
 
-项目名称：revenu000.ecat合集 （此合集只包含10.5及以后的软件）
+项目名称：revenuecat合集 （此合集只包含10.5及以后的软件）
 软件版本：均适配2023.9.8最新 （每一个下载地址对应一个UAMappings）
 下载地址：星锤日记 https://is.gd/R5KqD4
 下载地址：倒数鸭  https://is.gd/rETAhp
@@ -64,7 +64,6 @@ if (typeof $response == "undefined") {
   const app = '1';
   const UAMappings = {
     'iScape':{ name: 'Pro', id: 'Limited_YearlyProAutoRenew'},//8.15
-    'CCML':{ name: 'rc_monthly', id: 'ccml_ios_monthly_v1'},//8.15
     'FunPix':{ name: 'premium', id: 'intro_price_weekly'},//8.15
     'WiseMate':{ name: 'vip_entitlement', id: 'wisemate.ai.ios.week'},//8.15
     'Loora':{ name: 'Yearly', id: 'yearly_119_99_no_trial'},//8.14
@@ -109,7 +108,7 @@ if (typeof $response == "undefined") {
     'CountDuck':{ name: 'premium', id: 'Lifetime'},
     'HTTPBot':{ name: 'Pro', id: 'httpbot_1499_1y_1w0'},
     'MyPianist':{ name: 'pro', id: 'com.collaparte.mypianist.pro.gift.twelve'},
-    'TouchRetouchBasic':{ name: 'premium', id: 'tr5_yearlysubsc_30_and_20_dlrs'},//年底00订阅
+    'TouchRetouchBasic':{ name: 'premium', id: 'tr5_yearlysubsc_30_and_20_dlrs'},//年底订阅
     'Free':{ name: 'pro', id: 'appspree_pro_lifetime'},
     'Version':{ name: 'pro', id: 'httpbot_1499_1y_1w0'},
     'wordswag':{ name: 'pro', id: 'Pro_Launch_Monthly'},
