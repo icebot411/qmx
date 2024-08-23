@@ -27,7 +27,7 @@ https://appraven.net/collection/77331175
 
 hostname = buy.itunes.apple.com
 
-***********************************/
+*****************************/
 
 
 
