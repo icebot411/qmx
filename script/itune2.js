@@ -36,7 +36,7 @@ var ddgksf2013 = JSON.parse($response.body);
 // ========= 动态ID ========= //
 var productidmap={
 	'default':['ddgksf2013','https://t.me/ddgksf2021',0],
-    'net.projectwizards.merlinprojectgo':['Merlin%20Project','net.projectwizards.merlinprojectgo.monthlySubscription',0],
+    'net.projectwizards.merlinprojectgo':['Merlin%20Project','net.projectwizards.merlinprojectgo.monthlySubscription',1],
 	'com.sugarmo.ScrollClip':['picsewV3.9.4','com.sugarmo.ScrollClip.pro',1],
 	'com.zijayrate.analogcam':['oldroll','com.zijayrate.analogcam.vipforever10',0],
 	'com.loveyouchenapps.knockout':['proknockout','com.knockout.7daysplus',0],
