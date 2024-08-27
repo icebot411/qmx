@@ -14,9 +14,15 @@
 
 //var obj = JSON.parse($response.body);
 var obj = JSON.parse($response.body);
-obj=
+let url = $request.url;
+const cons1= "https://apivpn.timonsoftware.com/server/getListServerWireGuardV4";
+//const cons2= "https://api.blinkist.com/v4/me.json";
+//const cons3= "https://api.blinkist.com/v4/me/access";
+if((url===cons1))
 {
-  obj["data"]["tag"]="green";
-};
+obj["data"]["tag"]= "green";
+obj["user"]["premium"]= "0";
+
+}
 
 $done({body: JSON.stringify(obj)});
