@@ -19,7 +19,7 @@ obj =
             "should_reset_password" : false,
             "start_notification_date" : null,
             "subscription_start_date" : "2023-08-29T17:44:26.000Z",
-            "payment_info_required" : faslse,
+            "payment_info_required" : false,
             "status" : "active",
             "satu" : "680e400a-7cc8-4f5f-ba7f-a7a6d43ba829"
           }
