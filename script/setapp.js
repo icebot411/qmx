@@ -1,6 +1,6 @@
 let obj=JSON.parse($response.body);
 let url = $request.url;
-const cons1= "https://customer.setapp.com/v5/token/*";
+const cons1= "https://customer.setapp.com/v5/token/.*";
 const cons2= "https://api.changeme.com/v4/me.json";
 const cons3= "https://api.blinkist.com/v4/me/access";
 if((url===cons1))
