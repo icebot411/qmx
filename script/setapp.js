@@ -1,17 +1,41 @@
 let obj=JSON.parse($response.body);
-let url = $request.url;
-const cons1= "https://customer.setapp.com/v5/token/.*";
-const cons2= "https://api.changeme.com/v4/me.json";
-const cons3= "https://api.blinkist.com/v4/me/access";
-if((url===cons1))
+obj =
 {
-    obj["data"]["relationships"]["customer"]["data"]["attributes"]["subscription_expiration"]="2062-08-29T17:44:26.000Z";
-    obj["data"]["relationships"]["customer"]["data"]["attributes"]["status"]="active";
-    obj["data"]["relationships"]["customer"]["data"]["attributes"]["start_notification_date"]="2062-08-29T17:44:26.000Z";
-    obj["data"]["relationships"]["customer"]["data"]["attributes"]["grace_period_expiration"]="30";
-    obj["data"]["relationships"]["customer"]["data"]["attributes"]["next_payment_date"]="2069-08-29T17:44:26.000Z";
-    obj["data"]["relationships"]["customer"]["data"]["attributes"]["subscription_start_date"]="2023-08-29T17:44:26.000Z";
+  "data" : {
+
+    "relationships" : {
+      "customer" : {
+        "data" : {
+          "id" : 3769621,
+          "type" : "customer",
+          "attributes" : {
+            "payment_info_available" : false,
+            "cc_required_flow_test" : false,
+            "subscription_expiration" : "2062-08-29T17:44:26.000Z",
+            "newsletter_subscribed" : false,
+            "grace_period_expiration" : "30",
+            "next_payment_date" : "2062-08-29T17:44:26.000Z",
+            "subscription_canceled" : false,
+            "should_reset_password" : false,
+            "start_notification_date" : null,
+            "subscription_start_date" : "2023-08-29T17:44:26.000Z",
+            "payment_info_required" : faslse,
+            "status" : "active",
+            "satu" : "680e400a-7cc8-4f5f-ba7f-a7a6d43ba829"
+          }
+        }
+      }
     }
+  }
+}
+
+
+
+
+
+
+
+
     $done({
         body: JSON.stringify(obj)
       });
