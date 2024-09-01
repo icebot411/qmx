@@ -63,7 +63,7 @@ if (typeof $response == "undefined") {
   var UA = $request.headers['user-agent'];
   const app = '1';
   const UAMappings = {
-    'Spark%20Desktop%20Helper':{ name: 'premium', id: 'spark_desktop_c_5999_1y_d50'},
+    'Spark%20Desktop%20Helper':{ name: 'premium', id: 'com.readdle.SparkDesktop.appstore'},
     'CoComelon':{ name: 'rc_monthly', id: 'ccml_ios_monthly_v1'},//8.15
     'iScape':{ name: 'Pro', id: 'Limited_YearlyProAutoRenew'},//8.15
     'FunPix':{ name: 'premium', id: 'intro_price_weekly'},//8.15
