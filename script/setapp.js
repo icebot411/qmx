@@ -1,10 +1,10 @@
 var body = $response.body;
 let obj = JSON.parse(body);
-obj.data.relationships.customer.attributes["cc_required_flow_test"] = false;
-obj.data.relationships.customer.attributes["subscription_expiration"] = "2062-08-29T17:44:26.000Z";
-obj.data.relationships.customer.attributes["grace_period_expiration"] = "30";
-obj.data.relationships.customer.attributes["next_payment_date"] = "2062-08-29T17:44:26.000Z";
-obj.data.relationships.customer.attributes["subscription_start_date"] = "2023-08-29T17:44:26.000Z";
-obj.data.relationships.customer.attributes["payment_info_required"] = false;
-obj.data.relationships.customer.attributes["status"] = "active";
+obj.data.relationships.customer.data.attributes["cc_required_flow_test"] = false;
+obj.data.relationships.customer.data.attributes["subscription_expiration"] = "2062-08-29T17:44:26.000Z";
+obj.data.relationships.customer.data.attributes["grace_period_expiration"] = "30";
+obj.data.relationships.customer.data.attributes["next_payment_date"] = "2062-08-29T17:44:26.000Z";
+obj.data.relationships.customer.data.attributes["subscription_start_date"] = "2023-08-29T17:44:26.000Z";
+obj.data.relationships.customer.data.attributes["payment_info_required"] = false;
+obj.data.relationships.customer.data.attributes["status"] = "active";
 $done({body:JSON.stringify(obj)});
