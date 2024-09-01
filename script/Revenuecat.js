@@ -133,6 +133,7 @@ if (typeof $response == "undefined") {
     'Sex%20Actions':{ name: 'Premium Plus', id: 'ru.sexactions.subscriptionPlusWeek1'},
     'Law':{ name: 'vip', id: 'LawVIPOneYear'},
     'Emoji+%20%F0%9F%98%9':{ name: 'premium', id: 'com.emoji.freemium.subscription.premium'},
+    'Spark%20Desktop%20Helper':{ name: 'premium', id: 'spark_desktop_c_5999_1y_d50'},
     'universal':{ name: 'Premium', id: 'remotetv.yearly.01'},
     'HabitKit':{ name: 'Pro', id: 'habitkit_1799_lt'},
     'windiary':{ name: 'Pro', id: 'windiary_1799_lt'},
@@ -148,7 +149,8 @@ if (typeof $response == "undefined") {
     "original_purchase_date": "2023-09-01T11:00:00Z",
     "purchase_date": "2023-09-01T11:00:00Z",
     "ownership_type": "PURCHASED",
-    "store": "app_store"
+
+    //"store": "app_store"
   };
   for (const i in UAMappings) {
     if (new RegExp(`^${i}`, 'i').test(UA)) {
