@@ -63,6 +63,7 @@ if (typeof $response == "undefined") {
   var UA = $request.headers['user-agent'];
   const app = '1';
   const UAMappings = {
+    'Spark%20Desktop%20Helper':{ name: 'premium', id: 'spark_desktop_c_5999_1y_d50'},
     'CoComelon':{ name: 'rc_monthly', id: 'ccml_ios_monthly_v1'},//8.15
     'iScape':{ name: 'Pro', id: 'Limited_YearlyProAutoRenew'},//8.15
     'FunPix':{ name: 'premium', id: 'intro_price_weekly'},//8.15
@@ -133,7 +134,6 @@ if (typeof $response == "undefined") {
     'Sex%20Actions':{ name: 'Premium Plus', id: 'ru.sexactions.subscriptionPlusWeek1'},
     'Law':{ name: 'vip', id: 'LawVIPOneYear'},
     'Emoji+%20%F0%9F%98%9':{ name: 'premium', id: 'com.emoji.freemium.subscription.premium'},
-    'Spark%20Desktop%20Helper':{ name: 'premium', id: 'spark_desktop_c_5999_1y_d50'},
     'universal':{ name: 'Premium', id: 'remotetv.yearly.01'},
     'HabitKit':{ name: 'Pro', id: 'habitkit_1799_lt'},
     'windiary':{ name: 'Pro', id: 'windiary_1799_lt'},
