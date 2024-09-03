@@ -56,6 +56,7 @@ obj=
     "tax_id": "",
     "team": false,
     "team_display_name": ""
+    /////////////////////////////
   },
   "team": null,
   "trial": {
