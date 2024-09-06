@@ -8,30 +8,14 @@ if((url===cons1))
 {
 obj["subscriber"]["subscriptions"]["prod_Lbx6dk453gMvkB"] = {
     "period_type": "normal",
-    "store_transaction_id": "si_QlobpfsaXTdAFL",
-    "original_purchase_date": "2024-09-01T16:49:24Z",
-    "purchase_date": "2024-09-01T16:49:24Z",
-    "grace_period_expires_date": null,
-    "refunded_at": null,
     "expires_date": "2229-09-08T16:49:24Z",
-    "is_sandbox": false,
-    "billing_issues_detected_at": null,
-    "unsubscribe_detected_at": "2024-09-01T16:49:24Z",
-    "store": "stripe",
-    "auto_resume_date": null
   };
 
 obj["subscriber"]["entitlements"]["free-sws"]= {
     "expires_date": "2229-07-15T15:03:33Z",
-    "grace_period_expires_date": null,
-    "product_identifier": "rc_promo_free-sws_lifetime",
-    "purchase_date": "2024-09-01T15:03:33Z"
   };
 obj["subscriber"]["entitlements"]["premium"]= {
     "expires_date": "2229-07-15T15:03:33Z",
-    "grace_period_expires_date": null,
-    "product_identifier": "prod_Lbx6dk453gMvkB",
-    "purchase_date": "2024-09-01T15:03:33Z"
   };
   obj["subscriber"]["entitlements"]= {
     "product_identifier": "spark_desktop_openai_tokens_4xt",
