@@ -18,7 +18,7 @@ obj["subscriber"]["entitlements"]["premium"]= {
     "purchase_date": "2024-09-01T15:03:33Z",
   };
 
-{
+
 obj["subscriber"]["subscriptions"]["prod_Lbx6dk453gMvkB"] = {
     "period_type": "normal",
     "grace_period_expires_date": null,
@@ -34,6 +34,6 @@ obj["subscriber"]["subscriptions"]["prod_Lbx6dk453gMvkB"] = {
     "auto_resume_date": null,
   };
 
-}
+
 
 $done({body: JSON.stringify(obj)});
