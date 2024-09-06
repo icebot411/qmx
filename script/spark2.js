@@ -1,10 +1,15 @@
 
 var obj = JSON.parse($response.body);
 let url = $request.url;
-const cons1= "https://api.revenuecat.com/v1/subscribers/o0x1rYwUKUFah7Q";
+//const cons1= "Spark%20Desktop%20Helper";
 //const cons2= 
 //const cons3= 
-if((url===cons1))
+var UA = $request.headers['user-agent'];
+const UAMappings = {
+  'Spark%20Desktop%20Helper':{ name: 'premium', id: null},
+};
+for (const i in UAMappings) {
+  if (new RegExp(`^${i}`, 'i').test(UA)) {
 obj["subscriber"]["entitlements"]["free-sws"]= {
     "expires_date": "2229-07-15T15:03:33Z",
     "grace_period_expires_date": null,
@@ -33,6 +38,9 @@ obj["subscriber"]["subscriptions"]["prod_Lbx6dk453gMvkB"] = {
     "refunded_at": null,
     "auto_resume_date": null,
   };
+  break;
+  }
+}
 
 
 
