@@ -5,7 +5,7 @@ const cons1= "https://api.revenuecat.com/v1/subscribers/o0x1rYwUKUFah7Q";
 //const cons2= "https://api.blinkist.com/v4/me.json";
 //const cons3= "https://api.blinkist.com/v4/me/access";
 if((url===cons1))
-  obj["subscriber"]["entitlements"]["free-sws"]= {
+obj["subscriber"]["entitlements"]["free-sws"]= {
     "expires_date": "2229-07-15T15:03:33Z",
     "grace_period_expires_date": null,
     "product_identifier": "rc_promo_free-sws_lifetime",
@@ -16,9 +16,6 @@ obj["subscriber"]["entitlements"]["premium"]= {
     "grace_period_expires_date": null,
     "product_identifier": "prod_Lbx6dk453gMvkB",
     "purchase_date": "2024-09-01T15:03:33Z",
-  };
-  obj["subscriber"]["entitlements"]= {
-    "product_identifier": "spark_desktop_openai_tokens_4xt",
   };
 
 {
